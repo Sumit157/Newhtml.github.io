@@ -1,0 +1,125 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #511F67;
+    margin: 0;
+}
+
+.system {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    padding-top: 100%;
+}
+
+@media (min-width: 700px) {
+    .system {
+        padding-top: 700px;
+    }
+}
+
+.system__sun {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.system__orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin infinite linear both;
+}
+
+.system__planet {
+    position: absolute;
+    top: 50%;
+    left: -12px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}
+
+.system_orbit--mercury {
+    width: 30%;
+    height: 30%;
+    animation-duration: 1s;
+}
+
+.system_orbit--venus {
+    width: 40%;
+    height: 40%;
+    animation-duration: 2.6s;
+}
+
+.system_orbit--earth {
+    width: 50%;
+    height: 50%;
+    animation-duration: 4.1s;
+}
+
+.system_orbit--mars {
+    width: 60%;
+    height: 60%;
+    animation-duration: 7.8s;
+}
+
+.system_orbit--jupiter {
+    width: 70%;
+    height: 70%;
+    animation-duration: 49.8s;
+}
+
+.system_orbit--saturn {
+    width: 80%;
+    height: 80%;
+    animation-duration: 120.3s;
+}
+
+.system_orbit--uranus {
+    width: 90%;
+    height: 90%;
+    animation-duration: 348.4s;
+}
+
+.system_orbit--neptune {
+    width: 100%;
+    height: 100%;
+    animation-duration: 684.4s;
+}
+
+.system_orbit--pluto {
+    width: 110%;
+    height: 110%;
+    animation-duration: 1028.6s;
+}
