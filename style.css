@@ -16,7 +16,7 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-color: #511F67;
+    background-color: #000000;
     margin: 0;
 }
 
@@ -73,25 +73,25 @@ body {
 .system_orbit--mercury {
     width: 30%;
     height: 30%;
-    animation-duration: 1s;
+    animation-duration: 3s;
 }
 
 .system_orbit--venus {
     width: 40%;
     height: 40%;
-    animation-duration: 2.6s;
+    animation-duration: 3.6s;
 }
 
 .system_orbit--earth {
     width: 50%;
     height: 50%;
-    animation-duration: 4.1s;
+    animation-duration: 5.1s;
 }
 
 .system_orbit--mars {
     width: 60%;
     height: 60%;
-    animation-duration: 7.8s;
+    animation-duration: 8.8s;
 }
 
 .system_orbit--jupiter {
